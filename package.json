@@ -1,0 +1,36 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"node index.js\" \"node deploy-commands.js\"",
+    "deploycmds": "node deploy-commands.js",
+    "mongotest": "node MongoTest.js",
+    "checkSentiment": "node CheckSentiment.js",
+    "gptTest": "node GPTResponse.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/voice": "^0.6.0",
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "@tensorflow/tfjs": "^3.11.0",
+    "concurrently": "^6.3.0",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "firebase": "^9.3.0",
+    "got": "^11.8.3",
+    "monkeylearn": "^3.4.0",
+    "node": "16.6.1"
+  },
+  "devDependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@tensorflow/tfjs-backend-webgl": "^3.11.0",
+    "discord-api-types": "^0.23.1",
+    "mongodb": "^4.2.1",
+    "tensorflow-models": "0.0.1"
+  }
+}
